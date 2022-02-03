@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "516987999783",
+    "project_id": "the-enigma-3a949",
+    "storage_bucket": "the-enigma-3a949.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516987999783:android:4d4f401d1174d20dc76002",
+        "android_client_info": {
+          "package_name": "com.example.theenigma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516987999783-ajg4firsh9eoe7tih0bh95guqvunun07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.theenigma",
+            "certificate_hash": "7d916c8503604dd6e226bb6510075225873e293a"
+          }
+        },
+        {
+          "client_id": "516987999783-0qk1e0u0i59bv8v09ojhss00v2bb42ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw_IbPxV1E3KrH9z_D3zt_y3Te3W4Np2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516987999783-0qk1e0u0i59bv8v09ojhss00v2bb42ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

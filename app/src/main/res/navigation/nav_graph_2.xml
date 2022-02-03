@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_2"
+    app:startDestination="@id/homeScreenFragment2">
+
+    <fragment
+        android:id="@+id/homeScreenFragment2"
+        android:name="com.example.theenigma.fragments.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_chapterOneFragment"
+            app:destination="@id/chapterOneFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_chapterFourFragment"
+            app:destination="@id/chapterFourFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_chapterThreeFragment"
+            app:destination="@id/chapterThreeFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment2_to_chapterTwoFragment"
+            app:destination="@id/chapterTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="com.example.theenigma.fragments.LeaderBoardFragment"
+        android:label="fragment_leader_board"
+        tools:layout="@layout/fragment_leader_board" />
+    <fragment
+        android:id="@+id/moreOptionsFragment"
+        android:name="com.example.theenigma.fragments.MoreOptionsFragment"
+        android:label="fragment_more_options"
+        tools:layout="@layout/fragment_more_options" />
+    <fragment
+        android:id="@+id/chapterOneFragment"
+        android:name="com.example.theenigma.fragments.ChapterOneFragment"
+        android:label="fragment_chapter_one"
+        tools:layout="@layout/fragment_chapter_one" />
+    <fragment
+        android:id="@+id/chapterFourFragment"
+        android:name="com.example.theenigma.fragments.ChapterFourFragment"
+        android:label="fragment_chapter_four"
+        tools:layout="@layout/fragment_chapter_four" />
+    <fragment
+        android:id="@+id/chapterThreeFragment"
+        android:name="com.example.theenigma.fragments.ChapterThreeFragment"
+        android:label="fragment_chapter_three"
+        tools:layout="@layout/fragment_chapter_three" />
+    <fragment
+        android:id="@+id/chapterTwoFragment"
+        android:name="com.example.theenigma.fragments.ChapterTwoFragment"
+        android:label="fragment_chapter_two"
+        tools:layout="@layout/fragment_chapter_two" />
+</navigation>

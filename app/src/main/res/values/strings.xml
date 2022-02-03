@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">The Enigma</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SignInButton">Sign In with Google</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Clues">Search for clues</string>
+    <string name="ARSessionNamehint">Enter the name of AR Session</string>
+    <string name="PinSessionHint">Enter the unique PIN for the Session</string>
+    <string name="descriptionCh1">Welcome to first chapter of The Enigma the description will come here in this section</string>
+</resources>

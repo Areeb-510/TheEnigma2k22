@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeScreenFragment2"
+        android:title="HOME"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/leaderBoardFragment"
+        android:title="LEADERBOARD"
+        android:icon="@drawable/ic_baseline_leaderboard_24"
+        />
+
+    <item
+
+        android:id="@+id/moreOptionsFragment"
+        android:title="OPTIONS"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        />
+</menu>
