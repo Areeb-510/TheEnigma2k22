@@ -32,7 +32,11 @@
         android:id="@+id/moreOptionsFragment"
         android:name="com.example.theenigma.fragments.MoreOptionsFragment"
         android:label="fragment_more_options"
-        tools:layout="@layout/fragment_more_options" />
+        tools:layout="@layout/fragment_more_options" >
+        <action
+            android:id="@+id/action_moreOptionsFragment_to_teamExeFragment"
+            app:destination="@id/teamExeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chapterOneFragment"
         android:name="com.example.theenigma.fragments.ChapterOneFragment"
@@ -53,4 +57,9 @@
         android:name="com.example.theenigma.fragments.ChapterTwoFragment"
         android:label="fragment_chapter_two"
         tools:layout="@layout/fragment_chapter_two" />
+    <fragment
+        android:id="@+id/teamExeFragment"
+        android:name="com.example.theenigma.TeamExeFragment"
+        android:label="fragment_team_exe"
+        tools:layout="@layout/fragment_team_exe" />
 </navigation>

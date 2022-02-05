@@ -1,6 +1,7 @@
-package com.example.theenigma
+package com.example.theenigma.applications
 
 import android.app.Application
+import com.example.theenigma.interfaces.RetrofitHelper
 import com.example.theenigma.data.QuestionDataBase
 import com.example.theenigma.interfaces.QuestionAPI
 import com.example.theenigma.repository.QuestionRepository

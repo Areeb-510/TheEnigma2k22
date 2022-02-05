@@ -10,13 +10,20 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.theenigma.R
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 
 
 class MainActivity2 : AppCompatActivity() {
+
+    companion object {
+        var checker = false;
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -62,4 +69,5 @@ class MainActivity2 : AppCompatActivity() {
             decorView.setSystemUiVisibility(uiOptions)
         }
     }
+
 }

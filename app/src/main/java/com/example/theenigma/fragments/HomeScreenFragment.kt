@@ -12,8 +12,10 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.graphics.drawable.AnimationDrawable
 import android.graphics.drawable.ClipDrawable.HORIZONTAL
+import android.graphics.drawable.ColorDrawable
 import android.location.Location
 import android.location.LocationManager
 import android.net.Uri
@@ -26,6 +28,7 @@ import android.os.VibrationEffect
 import android.os.Build
 
 import android.os.Vibrator
+import android.text.Html
 import android.util.Log
 import android.widget.GridLayout.HORIZONTAL
 import android.widget.LinearLayout.HORIZONTAL
@@ -34,6 +37,7 @@ import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.solver.widgets.ConstraintWidget.HORIZONTAL
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -42,6 +46,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.HORIZONTAL
 import com.bumptech.glide.Glide
 import com.example.theenigma.R
+import com.example.theenigma.activities.MainActivity2
 import com.example.theenigma.data.QuestionDao
 import com.example.theenigma.data.User
 import com.example.theenigma.data.UserDao
@@ -52,6 +57,7 @@ import com.example.theenigma.myList
 import com.example.theenigma.recycler_view.HomeScreenRecyclerViewAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.toObject
@@ -61,9 +67,13 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class HomeScreenFragment : Fragment() {
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
+
 
         }
     }
@@ -73,8 +83,22 @@ class HomeScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val view = activity?.findViewById<View>(android.R.id.content)
+
+        if (view != null && MainActivity2.checker == false) {
+            MainActivity2.checker = true
+            val snackbar = Snackbar.make(view,
+                Html.fromHtml("<strong>Welcome to The Enigma</strong>"),Snackbar.LENGTH_LONG)
+
+            val snackBarView: View = snackbar.getView()
+            snackBarView.translationY = (-200).toFloat()
+            snackBarView.setBackgroundColor(resources.getColor(R.color.app_blue))
+            snackbar.show()
+        }
+
         return inflater.inflate(R.layout.fragment_home_screen, container, false)
     }
+
 
     private lateinit var AR_Button : CardView
     // FusedLocationProviderClient - Main class for receiving location updates.
@@ -101,6 +125,7 @@ class HomeScreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
 
         val auth = FirebaseAuth.getInstance()

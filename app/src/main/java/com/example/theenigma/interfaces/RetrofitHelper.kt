@@ -1,4 +1,4 @@
-package com.example.theenigma
+package com.example.theenigma.interfaces
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -9,22 +9,16 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
-import com.example.theenigma.QuestionApplication
+import com.example.theenigma.applications.QuestionApplication
 import com.example.theenigma.R
-import com.example.theenigma.RetrofitHelper
-import com.example.theenigma.activities.MainActivity2
 import com.example.theenigma.data.QuestionDao
 import com.example.theenigma.data.QuestionDataBase
-import com.example.theenigma.interfaces.QuestionAPI
 import com.example.theenigma.models.ChapterOneViewModel
 import com.example.theenigma.models.ChapterOneViewModelFactory
-import com.example.theenigma.repository.QuestionRepository
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import info.hoang8f.widget.FButton
-import kotlinx.coroutines.launch
 
 
 class ChapterOneFragment : Fragment() {
