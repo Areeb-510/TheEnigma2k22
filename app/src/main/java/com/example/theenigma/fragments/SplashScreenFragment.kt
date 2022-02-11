@@ -27,14 +27,11 @@ class SplashScreenFragment : Fragment() {
 
         }
 
-        val mp = MediaPlayer.create(activity, R.raw.intro)
-        mp.start()
     }
 
     private lateinit var splashanim: Animation
     private lateinit var splashimage: ImageView
     private lateinit var auth: FirebaseAuth
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

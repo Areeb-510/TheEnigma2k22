@@ -42,6 +42,8 @@ class MoreOptionsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val options = view.findViewById<CardView>(R.id.team_exe)
+
         options_text = view.findViewById(R.id.display)
         ar_test_card = view.findViewById(R.id.AR_Test)
 
@@ -53,6 +55,11 @@ class MoreOptionsFragment : Fragment() {
         }
 
         options_text.text = "MORE OPTIONS"
+
+        options.setOnClickListener {
+            val action = MoreOptionsFragmentDirections.actionMoreOptionsFragmentToTeamExeFragment()
+            findNavController().navigate(action)
+        }
 
         ar_test_card.setOnClickListener {
             lifecycleScope.launch {

@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         // Changing Color of bottom nav bar in android
         window.navigationBarColor = ContextCompat.getColor(this, R.color.black)
 
-        getLocationPermission()
+//        getLocationPermission()
     }
 
     fun isServicesOK(): Boolean {

@@ -67,13 +67,9 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class HomeScreenFragment : Fragment() {
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
 
         }
     }
@@ -91,6 +87,7 @@ class HomeScreenFragment : Fragment() {
                 Html.fromHtml("<strong>Welcome to The Enigma</strong>"),Snackbar.LENGTH_LONG)
 
             val snackBarView: View = snackbar.getView()
+
             snackBarView.translationY = (-200).toFloat()
             snackBarView.setBackgroundColor(resources.getColor(R.color.app_blue))
             snackbar.show()
